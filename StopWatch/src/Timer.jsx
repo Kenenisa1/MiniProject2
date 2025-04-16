@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-// import './TimerStyle.css';
+import './TimerStyles.css';
 
 const Timer = () => {
     const [time, setTime] = useState(0); 
@@ -23,7 +23,7 @@ const Timer = () => {
             setIsRunning(true);
             timerRef.current = setInterval(() => {
                 setTime(prevTime => prevTime + 100); 
-            }, 100);
+            }, 10);
         }
     };
 
@@ -50,7 +50,7 @@ const Timer = () => {
 
     return (
         <div className="timer-container">
-            <h1>Set a Timer Until Your Order Arrives</h1>
+            <h1 className='Timer'>Timer Stopwatch</h1>
             <h1 id="PlayTimer">
                 {formatTime(time)}
             </h1>

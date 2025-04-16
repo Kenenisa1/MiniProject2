@@ -5,6 +5,7 @@
     justify-content: center;
     height: 100vh;
     font-family: Arial, sans-serif;
+    background: #4dbdfe;
 }
 
 #PlayTimer {
@@ -43,4 +44,9 @@ button {
 
 #reset:hover {
     background-color: #d32f2f;
+}
+.Timer{
+    font-size: 80px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: green;
 }
