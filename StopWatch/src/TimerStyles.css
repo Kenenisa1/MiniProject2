@@ -1,0 +1,46 @@
+.timer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+#PlayTimer {
+    font-size: 4rem;
+    margin: 2rem 0;
+    font-family: monospace;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#play, #pause {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#play:hover, #pause:hover {
+    background-color: #45a049;
+}
+
+#reset {
+    background-color: #f44336;
+    color: white;
+}
+
+#reset:hover {
+    background-color: #d32f2f;
+}
